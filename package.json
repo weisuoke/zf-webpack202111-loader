@@ -1,0 +1,25 @@
+{
+  "name": "zf-webpack202111-loader",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/weisuoke/zf-webpack202111-loader.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/weisuoke/zf-webpack202111-loader/issues"
+  },
+  "homepage": "https://github.com/weisuoke/zf-webpack202111-loader#readme",
+  "devDependencies": {
+    "loader-runner": "^4.2.0",
+    "webpack": "^5.69.1",
+    "webpack-cli": "^4.9.2"
+  }
+}
