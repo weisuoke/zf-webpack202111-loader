@@ -18,8 +18,13 @@
   },
   "homepage": "https://github.com/weisuoke/zf-webpack202111-loader#readme",
   "devDependencies": {
+    "@babel/core": "^7.17.5",
+    "@babel/preset-env": "^7.16.11",
     "loader-runner": "^4.2.0",
     "webpack": "^5.69.1",
     "webpack-cli": "^4.9.2"
+  },
+  "dependencies": {
+    "loader-utils": "^3.2.0"
   }
 }
