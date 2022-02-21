@@ -1,9 +1,12 @@
 const path = require('path')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
   mode: 'development',
   entry: './src/index.js',
   devtool: false,
+  // 指定当前的根目录
+  context: process.cwd().replace(/\\g/, '/'),
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: 'main.js'
@@ -28,6 +31,15 @@ module.exports = {
           }
         }
       },
+      {
+        test: /\.less$/,
+        use: ['style-loader', 'less-loader']
+      }
     ]
-  }
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: "./public/index.html"
+    })
+  ]
 }

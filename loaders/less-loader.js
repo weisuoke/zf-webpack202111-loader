@@ -9,7 +9,8 @@ function loader(lessSource) {
   // 而是会等待你调用 callback 函数才会继续执行
   let callback = this.async();
   less.render(lessSource, {filename: this.resource}, (err, output) => {
-    callback(err, output.css)
+    let script = `module.exports = ${JSON.stringify(output.css)}`
+    callback(err, script)
   })
 }
 
